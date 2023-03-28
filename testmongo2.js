@@ -44,8 +44,8 @@ async function run() {
     const query = { partID: req.params.item };
 
     const player = await players.findOne(query);
-    console.log(part);
-    res.send('Found this: ' + JSON.stringify(part));  //Use stringify to print a json
+    console.log(player);
+    res.send('Found this: ' + JSON.stringify(player));  //Use stringify to print a json
 
   } finally {
     // Ensures that the client will close when you finish/error
